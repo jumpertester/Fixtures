@@ -1,0 +1,7 @@
+<suite name="Stars Group Fixture Tech Test">
+    <test name="Test All">
+        <classes>
+            <class name="test" />
+        </classes>
+    </test>
+</suite>
