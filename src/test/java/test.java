@@ -18,8 +18,8 @@ public class test {
         fixtures.createFixture();
         Response newFixture = fixtures.getFixture("4");
         long startTime = System.currentTimeMillis();
-        while(newFixture.getBody().asString().equals("Fixture not found") ||
-                (System.currentTimeMillis()-startTime)<60000){
+        while(newFixture.getBody().asString().equals("Fixture not found")
+                && (System.currentTimeMillis()-startTime)<10000){
             System.out.println("New fixture not found....");
             newFixture = fixtures.getFixture("4");
         }
